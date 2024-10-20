@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Web Based Application | Weather App</title>
 </head>
 <body>
     <div class="container">
-        <div class = "Side Menu ">
+        <div class="SideMenu">
             <div class="logo">
                 <h1>WeatherApp</h1>
             </div>
@@ -23,20 +24,21 @@
 
         <div class="Main_Window">
             <section class="header">
-                <input type="search" name="" id="W_Search">
-                <button type="submit">Get Weather</button>
+                <input type="search" name="CityInput" id="CityInput" placeholder="Enter city name">
+                <button onclick="getWeather()">Get Weather</button>
                 <div class="ProfilePic"></div>
             </section>
-            <section class="Weather_info">
-                <div class="Weather_today"></div>
-                <div class="Weather_Weakly"></div>
-            </section>
-            <section class="Charts">
+            <div class="Weather_info">
+                <div class="Weather_today" id="WeatherToday"></div>
+                <div class="WeatherWekly" id="WeatherWeekly"></div>
+            </div>
+            <div class="Charts">
                 <div class="BarChart"></div>
                 <div class="DoughNutChart"></div>
                 <div class="LineChart"></div>
-            </section>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

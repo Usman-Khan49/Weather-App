@@ -1,0 +1,74 @@
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.Menu_items
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.SideMenu, .Main_Window
+{
+    height: 100vh;
+}
+.SideMenu
+{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.Main_Window
+{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Weather_info
+{
+    width: 60%;
+    height: 45vh;
+}
+.Charts
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.Charts div{
+    width: 30%;
+    height: 20vh;
+}
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.weather-icon {
+    width: 60px;
+    height: 60px;
+}
