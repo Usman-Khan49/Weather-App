@@ -426,7 +426,7 @@ const weatherBackgrounds = {
              let response;
              if (genAI) {
                  console.log('Attempting to use GoogleGenerativeAI...');
-                 const model = genAI.getGenerativeModel({ model: "gemini-pro"});
+                 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
                  const prompt = `You are a weather assistant. Based on the following weather forecast data: ${JSON.stringify(originalForecastData)}, please answer this question: ${message}. Give a concise and relevant answer based only on the provided data.`;
                  const result = await model.generateContent(prompt);
                  response = await result.response;
